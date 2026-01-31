@@ -1,0 +1,10 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  height: 100vh;
+}
+main {
+  flex-grow: 1;
+  /* background-color: rgb(109, 104, 86); */
+}
