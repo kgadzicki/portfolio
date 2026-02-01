@@ -1,8 +1,7 @@
 .layout {
   display: flex;
   flex-direction: column;
-  width: 80vh;
-  height: 100vh;
+  min-height: 100vh;
 }
 main {
   flex-grow: 1;

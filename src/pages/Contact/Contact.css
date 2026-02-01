@@ -1,0 +1,22 @@
+.contact {
+  padding: 2rem;
+}
+
+.contactRow {
+  margin-bottom: 1.5rem;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.value {
+  font-weight: 600;
+}
+
+.copied {
+  font-size: 0.95rem;
+}
