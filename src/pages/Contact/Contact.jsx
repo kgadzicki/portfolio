@@ -1,7 +1,9 @@
 import { useState } from "react";
+import CopyRow from "../../components/CopyRow/CopyRow";
 
 const email = "kam.gadzicki@gmail.com";
 const phone = "517-439-350";
+const info = "Hello from my portfolio";
 
 function Contact() {
   // null | "email" | "phone"
@@ -25,23 +27,29 @@ function Contact() {
     <div className="contact">
       <h1>Contact</h1>
 
-      <section className="contactRow">
-        <h2>Email address</h2>
-        <div className="line">
-          <span className="value">{email}</span>
-          <button onClick={() => handleCopy(email, "email")}>Copy</button>
-          {copied === "email" && <span className="copied">Skopiowano</span>}
-        </div>
-      </section>
+      <CopyRow
+        label="Email address"
+        value={email}
+        id="email"
+        copied={copied}
+        onCopy={handleCopy}
+      />
 
-      <section className="contactRow">
-        <h2>Phone number</h2>
-        <div className="line">
-          <span className="value">{phone}</span>
-          <button onClick={() => handleCopy(phone, "phone")}>Copy</button>
-          {copied === "phone" && <span className="copied">Skopiowano</span>}
-        </div>
-      </section>
+      <CopyRow
+        label="Phone number"
+        value={phone}
+        id="phone"
+        copied={copied}
+        onCopy={handleCopy}
+      />
+
+      <CopyRow
+        label="Copy custom text"
+        value={info}
+        id="info"
+        copied={copied}
+        onCopy={handleCopy}
+      />
 
       <h4>Lublin</h4>
     </div>
