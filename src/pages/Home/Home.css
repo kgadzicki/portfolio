@@ -3,5 +3,28 @@
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
+}
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.image_container {
+  flex: 2;
+  padding: 1rem;
+}
+
+.titleContainer {
+  padding: 1rem;
+  display: block;
+  flex: 1;
+}
+.image_home {
+  max-width: 100%;
+  height: auto;
+  display: block;
   border: 1px solid;
 }

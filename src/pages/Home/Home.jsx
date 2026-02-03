@@ -1,26 +1,32 @@
 import "../Home/Home.css";
+import homeImage from "../../assets/ME_NEW.jpg";
 
 function Home() {
   return (
-    <div className="general_CSS">
-      {/* <Header/> */}
+    <div className="general">
+      <h1>Portfolio webside</h1>
       <div className="contentContainer">
         <section className="image_container">
-          {/* <img src="" alt="Kamil Gadzicki, Production Engineer" className="image_home" /> */}
+          <img
+            src={homeImage}
+            alt="Kamil Gadzicki, Production Engineer"
+            className="image_home"
+          />
         </section>
-        <div className="titleContainer">
+
+        <section className="titleContainer">
           <h3>Hello, My name is</h3>
           <h1>Kamil Gadzicki</h1>
           <h2>Production Engineer</h2>
           <div className="downloadBottom">
-            <a href="" className="bt btn btn primary">
+            <a href="" className="btn btn-primary btn-lg">
               Download CV (PL)
             </a>
-            <a href="" className="bt1 btn btn-primary">
+            <a href="" className="btn btn-secondary btn-lg">
               Download CV in (ENG)
             </a>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
