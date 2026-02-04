@@ -3,6 +3,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <nav>
+      <h1 className="navTitle">Portfolio Webside</h1>
       <NavLink to="/" end>
         Home
       </NavLink>

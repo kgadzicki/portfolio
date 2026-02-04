@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import "../CopyRow/CopyRow.css";
 
 function CopyRow({ label, value, id, copied, onCopy }) {
   const timeoutRef = useRef(null);
@@ -22,7 +23,7 @@ function CopyRow({ label, value, id, copied, onCopy }) {
       <div className="line">
         <span className="value">{value}</span>
 
-        <button type="button" onClick={handleClick}>
+        <button className="btn btn-primary" type="button" onClick={handleClick}>
           Copy
         </button>
 

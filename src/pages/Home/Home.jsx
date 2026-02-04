@@ -3,32 +3,24 @@ import homeImage from "../../assets/ME_NEW.jpg";
 
 function Home() {
   return (
-    <div className="general">
-      <h1>Portfolio webside</h1>
-      <div className="contentContainer">
-        <section className="image_container">
-          <img
-            src={homeImage}
-            alt="Kamil Gadzicki, Production Engineer"
-            className="image_home"
-          />
-        </section>
-
-        <section className="titleContainer">
+    <>
+      <div className="container">
+        <section className="imageContainer"></section>
+        <section className="text">
           <h3>Hello, My name is</h3>
           <h1>Kamil Gadzicki</h1>
           <h2>Production Engineer</h2>
           <div className="downloadBottom">
-            <a href="" className="btn btn-primary btn-lg">
+            <a href="" className="btn btn-primary">
               Download CV (PL)
             </a>
-            <a href="" className="btn btn-secondary btn-lg">
+            <a href="" className="btn btn-secondary">
               Download CV in (ENG)
             </a>
           </div>
         </section>
       </div>
-    </div>
+    </>
   );
 }
 

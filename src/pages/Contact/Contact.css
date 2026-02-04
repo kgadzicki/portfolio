@@ -1,8 +1,13 @@
 .contact {
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactRow {
+  padding-top: 1rem;
   margin-bottom: 1.5rem;
 }
 

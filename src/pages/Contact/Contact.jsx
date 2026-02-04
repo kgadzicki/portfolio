@@ -1,9 +1,9 @@
 import { useState } from "react";
 import CopyRow from "../../components/CopyRow/CopyRow";
+import "../Contact/Contact.css";
 
 const email = "kam.gadzicki@gmail.com";
 const phone = "517-439-350";
-const info = "Hello from my portfolio";
 
 function Contact() {
   // null | "email" | "phone"
@@ -39,14 +39,6 @@ function Contact() {
         label="Phone number"
         value={phone}
         id="phone"
-        copied={copied}
-        onCopy={handleCopy}
-      />
-
-      <CopyRow
-        label="Copy custom text"
-        value={info}
-        id="info"
         copied={copied}
         onCopy={handleCopy}
       />

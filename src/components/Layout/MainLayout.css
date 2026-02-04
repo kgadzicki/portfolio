@@ -5,5 +5,7 @@
 }
 main {
   flex-grow: 1;
+  max-width: 1200px;
+
   /* background-color: rgb(109, 104, 86); */
 }
