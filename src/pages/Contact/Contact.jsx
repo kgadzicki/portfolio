@@ -24,27 +24,28 @@ function Contact() {
   }
 
   return (
-    <div className="contact">
-      <h1>Contact</h1>
+    <>
+      <div className="contactImage"></div>
+      <div className="contact">
+        <CopyRow
+          label="Email address"
+          value={email}
+          id="email"
+          copied={copied}
+          onCopy={handleCopy}
+        />
 
-      <CopyRow
-        label="Email address"
-        value={email}
-        id="email"
-        copied={copied}
-        onCopy={handleCopy}
-      />
+        <CopyRow
+          label="Phone number"
+          value={phone}
+          id="phone"
+          copied={copied}
+          onCopy={handleCopy}
+        />
 
-      <CopyRow
-        label="Phone number"
-        value={phone}
-        id="phone"
-        copied={copied}
-        onCopy={handleCopy}
-      />
-
-      <h4>Lublin</h4>
-    </div>
+        <h4>Lublin</h4>
+      </div>
+    </>
   );
 }
 

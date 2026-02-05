@@ -1,5 +1,4 @@
 import "../Home/Home.css";
-import homeImage from "../../assets/ME_NEW.jpg";
 
 function Home() {
   return (

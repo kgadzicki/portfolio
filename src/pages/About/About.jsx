@@ -1,8 +1,11 @@
-
-
+import "../About/About.css";
 
 function About() {
-  return <div>About</div>
+  return (
+    <>
+      <div className="aboutImage"></div>
+    </>
+  );
 }
 
-export default About
+export default About;

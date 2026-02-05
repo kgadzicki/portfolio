@@ -1,8 +1,11 @@
-
-
+import "../Hobby/Hobby.css";
 
 function Hobby() {
-  return <div>Hobby</div>
+  return (
+    <>
+      <div className="hobbyImage"></div>
+    </>
+  );
 }
 
-export default Hobby
+export default Hobby;
