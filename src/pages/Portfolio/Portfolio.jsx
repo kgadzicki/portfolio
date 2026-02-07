@@ -2,40 +2,45 @@ import "../Portfolio/Portfolio.css";
 import honeybombImage from "../../assets/core.jpg";
 import compositeImage from "../../assets/composite.jpg";
 import nestingImage from "../../assets/nesting.jpg";
-
+import PortfolioCard from "../../PortfolioCard/PortfolioCard";
 function Portfolio() {
   return (
     <div className="portfolioCss">
       <div className="portfolioImage"></div>
       <h1 className="category">Category</h1>
+      {/* <PortfolioCard title="Composites" description={"lorem"} />
+      <PortfolioCard title="Honeycomb" description={"work work"} /> */}
 
       <div className="categoryContainer">
         <section className="composites">
-          <img src={compositeImage} className="imageComposites"></img>
-          <h3 className="title">Composites</h3>
-          <p>
-            Practical projects focused on composite materials. Solving real
-            technological problems from production and testing processes.
-          </p>
-          <button className="btn btn-primary">View projects</button>
+          <PortfolioCard
+            image={compositeImage}
+            title="Composites"
+            description={
+              "Practical projects focused on composite materials. Solving real technological problems from production and testing processes."
+            }
+            show="view projects"
+          />
         </section>
         <section className="nesting">
-          <img src={nestingImage} className="imageNesting"></img>
-          <h3 className="title">Nesting</h3>
-          <p>
-            Optimization of part placement on material sheets. Reducing waste
-            and improving production efficiency.
-          </p>
-          <button className="btn btn-primary">View projects</button>
+          <PortfolioCard
+            image={nestingImage}
+            title="Nesting"
+            description={
+              "Optimization of part placement on material sheets. Reducing waste and improving production efficiency."
+            }
+            show="view projects"
+          />
         </section>
         <section className="honeycomb">
-          <img src={honeybombImage} className="imageHoneycomb"></img>
-          <h3 className="title">Honeycomb</h3>
-          <p>
-            Work with honeycomb-based structures. Analyzing and solving quality
-            issues in manufacturing.
-          </p>
-          <button className="btn btn-primary">View projects</button>
+          <PortfolioCard
+            image={honeybombImage}
+            title="Honeycomb"
+            description={
+              "Work with honeycomb-based structures. Analyzing and solving quality issues in manufacturing."
+            }
+            show="view projects"
+          />
         </section>
       </div>
       <div className="categoryButton">
