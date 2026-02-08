@@ -38,13 +38,7 @@
   background-color: #3e2c16;
   border: 1px solid #938f8a;
 }
-.imageComposites,
-.imageNesting,
-.imageHoneycomb {
-  padding: 1rem;
-  height: 200px;
-  width: 100%;
-}
+
 .composites,
 .nesting,
 .honeycomb {
@@ -64,9 +58,6 @@
 .honeycomb:hover button {
   background-color: #3e2c16;
   color: #000;
-}
-.title {
-  color: #f5e6d3;
 }
 
 .categoryButton {
