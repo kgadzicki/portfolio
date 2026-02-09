@@ -3,7 +3,7 @@ import honeycombImage from "../../assets/core.jpg";
 import compositeImage from "../../assets/composite.jpg";
 import nestingImage from "../../assets/nesting.jpg";
 import PortfolioCard from "../PortfolioCard/PortfolioCard.jsx";
-import BeforeAfter from "../BeforeAfter/BeforeAfter.jsx";
+import HoneycombSection from "../BeforeAfter/BeforeAfter.jsx";
 
 function Portfolio() {
   return (
@@ -49,10 +49,7 @@ function Portfolio() {
         <button className="btn btn-primary">Nesting</button>
         <button className="btn btn-primary">Heneycomb</button>
       </div>
-      <BeforeAfter />
-      <BeforeAfter />
-      <BeforeAfter />
-      <BeforeAfter />
+      <HoneycombSection />
     </div>
   );
 }
