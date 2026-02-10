@@ -1,4 +1,4 @@
-export const honeycombItems = [
+export const honeycombData = [
   {
     before: {
       detailPhoto: "public/portfolio/honeycomb/before/toolCad.png",
