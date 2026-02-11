@@ -5,6 +5,7 @@ import nestingImage from "../../assets/nesting.jpg";
 import PortfolioCard from "../PortfolioCard/PortfolioCard.jsx";
 import HoneycombSection from "../Compare/BeforeAfter.jsx";
 import CompositesSection from "../Compare/CompareComposites.jsx";
+import NestingSection from "../Compare/nestingResults.jsx";
 
 function Portfolio() {
   return (
@@ -50,6 +51,7 @@ function Portfolio() {
         <button className="btn btn-primary">Nesting</button>
         <button className="btn btn-primary">Heneycomb</button>
       </div>
+      <NestingSection />
       <HoneycombSection />
       <CompositesSection />
     </div>

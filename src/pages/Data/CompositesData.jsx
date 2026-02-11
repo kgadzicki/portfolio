@@ -52,32 +52,6 @@ export const compositeItems = [
   },
   {
     before: {
-      detailPhoto: "public/portfolio/composites/before/before_4.jpg",
-      situationOverviwe: "",
-      problemDescription: "",
-    },
-
-    after: {
-      detailPhoto: "public/portfolio/composites/after/after_4.jpg",
-      correctiveActions: "",
-      results: "",
-    },
-  },
-  {
-    before: {
-      detailPhoto: "public/portfolio/composites/before/before_6.jpg",
-      situationOverviwe: "",
-      problemDescription: "",
-    },
-
-    after: {
-      detailPhoto: "public/portfolio/composites/after/after_6.jpg",
-      correctiveActions: ".",
-      results: "",
-    },
-  },
-  {
-    before: {
       detailPhoto: "public/portfolio/composites/before/before_7.jpg",
       situationOverviwe:
         "While working on a complex composite part consisting of multiple layers (fiberglass and a honeycomb core), I encountered a critical issue: the honeycomb filler was not adhering properly to the bottom fiberglass layer during the bonding process. The component required high precision alignment in the tool before laminating, and the failure to achieve a tight bond risked compromising structural integrity.",
@@ -108,6 +82,32 @@ export const compositeItems = [
         "Developed new machining strategies and CNC programs tailored to the issues.Repaired or modified fixtures (seal replacements, new clamps, corrected mounting holes).Introduced technological corrections: adjusted operation sequences, used correct tools and extensions.Trained laminators and updated work instructions to reduce excessive allowance.Worked closely with quality control to identify and trace root causes of non-conformities.",
       results:
         "The implemented improvements significantly reduced the number of production errors and enhanced part quality.Cross-departmental collaboration (operators, QC, engineers, lamination) enabled the creation of an effective corrective process, leading to better repeatability and conformity with customer documentation.",
+    },
+  },
+  {
+    before: {
+      detailPhoto: "public/portfolio/composites/before/before_4.jpg",
+      situationOverviwe: "",
+      problemDescription: "",
+    },
+
+    after: {
+      detailPhoto: "public/portfolio/composites/after/after_4.jpg",
+      correctiveActions: "",
+      results: "",
+    },
+  },
+  {
+    before: {
+      detailPhoto: "public/portfolio/composites/before/before_6.jpg",
+      situationOverviwe: "",
+      problemDescription: "",
+    },
+
+    after: {
+      detailPhoto: "public/portfolio/composites/after/after_6.jpg",
+      correctiveActions: "",
+      results: "",
     },
   },
 ];
