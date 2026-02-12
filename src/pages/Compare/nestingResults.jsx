@@ -1,7 +1,7 @@
 import "./BeforeAfter.css";
 import { nestingData } from "../Data/NestingData";
 
-function NestingCase({ before, after }) {
+function NestingCase({ charts }) {
   return (
     <>
       <div className="caseStudy">
@@ -90,7 +90,7 @@ function NestingCase({ before, after }) {
           <br />
         </h3>
         <img
-          src={`/${before.detailPhoto}`}
+          src={`/${charts.defectRate}`}
           alt="Image"
           className="detailImage"
         />
@@ -100,11 +100,7 @@ function NestingCase({ before, after }) {
           📈 Weekly production – number of conforming parts and defects – volume
           increase with stable quality
         </h3>
-        <img
-          src={`/${after.detailPhoto}`}
-          alt="Image"
-          className="detailImage"
-        />
+        <img src={`/${charts.quantity}`} alt="Image" className="detailImage" />
         <h3>📘 Side Effects – Knowledge and Development</h3>
         Consolidation of practical knowledge about honeycomb filler machining,
         their technological properties, and optimization possibilities Advanced
@@ -121,7 +117,7 @@ function NestingSection() {
   return (
     <div>
       {nestingData.map((item, index) => (
-        <NestingCase key={index} before={item.before} after={item.after} />
+        <NestingCase key={index} charts={item.charts} />
       ))}
     </div>
   );

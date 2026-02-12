@@ -1,7 +1,4 @@
-import "./BeforeAfter.css";
-import { honeycombData } from "../Data/HoneycombData.jsx";
-
-function BeforeAfter({ before, after }) {
+function BeforeAfterItem({ before, after }) {
   return (
     <>
       <div className="beforeSide">
@@ -49,14 +46,14 @@ function BeforeAfter({ before, after }) {
   );
 }
 
-function HoneycombSection() {
+function BeforeAfterList({ items }) {
   return (
     <div>
-      {honeycombData.map((item, index) => (
-        <BeforeAfter key={index} before={item.before} after={item.after} />
+      {items.map((item, index) => (
+        <BeforeAfterItem key={index} before={item.before} after={item.after} />
       ))}
     </div>
   );
 }
 
-export default HoneycombSection;
+export default BeforeAfterList;
