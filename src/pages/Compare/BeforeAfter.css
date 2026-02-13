@@ -2,3 +2,11 @@
   height: 350px;
   width: auto;
 }
+li {
+  text-align: left;
+}
+.charts {
+  padding: 1rem;
+  width: 600px;
+  height: auto;
+}
