@@ -9,20 +9,28 @@ export const nestingData = {
 
   meta: {
     title_1: "Case Study",
-    text_1: `Optimization of Honeycomb Filler Part Production under Crisis Conditions
-Position: Process Engineer – Programmer
-Project Duration: 12 weeks
-Industry: Industrial Manufacturing (CNC, Aerospace / Composites)`,
+    text_1: [
+      `Optimization of Honeycomb Filler Part Production under Crisis Conditions`,
+      "Position: Process Engineer – Programmer",
+      "Project Duration: 12 weeks",
+      "Industry: Industrial Manufacturing (CNC, Aerospace / Composites)",
+    ],
 
     title_2: "Technologies:",
-    text_2:
-      "CATIA, CNC programming, steel templates, manual cutting, nesting, quality analysis",
+    points_1: [
+      "CATIA",
+      "CNC programming",
+      "steel templates",
+      "manual cutting",
+      "nesting",
+      "quality analysis",
+    ],
 
     title_3: "🔍 Challenge Background",
     text_3:
       "Due to a sudden surge in demand from a key client, the company faced significant production challenges:",
 
-    points_1: [
+    points_2: [
       "High defect rate (14.9%)",
       "Limited number of CNC machines and operators",
       "Most programs prepared for single-piece production",
@@ -37,7 +45,7 @@ Industry: Industrial Manufacturing (CNC, Aerospace / Composites)`,
     text_5:
       "My experience as a CNC operator played a crucial role in the success of this project:",
 
-    points_2: [
+    points_3: [
       "Familiarity with honeycomb fillers (Nomex and aluminum; various thicknesses/densities) allowed fast feasibility checks for serial production.",
       "Strong understanding of CNC capabilities/limitations (tools, strategies, repeatability, ergonomics) enabled realistic program adaptation.",
     ],
@@ -45,7 +53,7 @@ Industry: Industrial Manufacturing (CNC, Aerospace / Composites)`,
     title_5: "🔧 Stages of Actions and Optimization",
     text_6: "Analysis of over 1200 CNC programs regarding:",
 
-    points_3: [
+    points_4: [
       "Number of phases (single-phase/two-phase)",
       "Potential for serial production",
       "Types of materials used",
@@ -57,7 +65,7 @@ Industry: Industrial Manufacturing (CNC, Aerospace / Composites)`,
     ],
 
     title_6: "Development of over 100 new CNC programs:",
-    points_4: [
+    points_5: [
       "Optimized for a single honeycomb filler block",
       "Matched to the machine park and operator skills",
       "Easy to implement and resistant to human errors",
@@ -65,5 +73,16 @@ Industry: Industrial Manufacturing (CNC, Aerospace / Composites)`,
     title_7: `📘 Side Effects – Knowledge and Development`,
     text_7:
       "Consolidation of practical knowledge about honeycomb filler machining, their technological properties, and optimization possibilities Advanced development of CNC programming skills for serial and repeatable production Strengthening analytical skills and implementing solutions in production conditions Ability to react quickly under time and resource pressure.",
+  },
+  optimizedNesting: {
+    description: "Optimized Nesting Layout",
+    nestingLayout_1: "portfolio/nesting/before/NestingConcept_1.jpg",
+    nestingLayout_2: "portfolio/nesting/before/NestingConcept_2.jpg",
+
+    manufacturedPart_1: "portfolio/nesting/after/manufacturedPart_1.jpg",
+    manufacturedPart_2: "portfolio/nesting/after/manufacturedPart_2.jpg",
+    manufacturedPart_3: "portfolio/nesting/after/manufacturedPart_3.jpg",
+    manufacturedPart_4: "portfolio/nesting/after/manufacturedPart_4.jpg",
+    manufacturedPart_5: "portfolio/nesting/after/manufacturedPart_5.jpg",
   },
 };
