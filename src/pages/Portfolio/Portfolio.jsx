@@ -1,12 +1,13 @@
-import "../Portfolio/Portfolio.css";
+import "../Portfolio/portfolio.css";
 import honeycombImage from "../../assets/core.jpg";
 import compositeImage from "../../assets/composite.jpg";
 import nestingImage from "../../assets/nesting.jpg";
 import PortfolioCard from "../PortfolioCard/PortfolioCard.jsx";
-import NestingCase from "../Compare/nestingResults.jsx";
+import NestingCase from "../Compare/NestingResults.jsx";
 import { honeycombData } from "../Data/HoneycombData.jsx";
 import BeforeAfterList from "../Compare/BeforeAfter.jsx";
 import { compositesData } from "../Data/CompositesData.jsx";
+import { nestingData, optimizedNesting } from "../Data/nestingData.jsx";
 
 function Portfolio() {
   return (
@@ -52,7 +53,7 @@ function Portfolio() {
         <button className="btn btn-primary">Nesting</button>
         <button className="btn btn-primary">Heneycomb</button>
       </div>
-      <NestingCase />
+      <NestingCase items={optimizedNesting} />
       {/* <BeforeAfterList items={honeycombData} />
       <BeforeAfterList items={compositesData} /> */}
     </div>

@@ -74,7 +74,10 @@ export const nestingData = {
     text_7:
       "Consolidation of practical knowledge about honeycomb filler machining, their technological properties, and optimization possibilities Advanced development of CNC programming skills for serial and repeatable production Strengthening analytical skills and implementing solutions in production conditions Ability to react quickly under time and resource pressure.",
   },
-  optimizedNesting: {
+};
+
+export const optimizedNesting = [
+  {
     description: "Optimized Nesting Layout",
     nestingLayout_1: "portfolio/nesting/before/NestingConcept_1.jpg",
     nestingLayout_2: "portfolio/nesting/before/NestingConcept_2.jpg",
@@ -85,4 +88,4 @@ export const nestingData = {
     manufacturedPart_4: "portfolio/nesting/after/manufacturedPart_4.jpg",
     manufacturedPart_5: "portfolio/nesting/after/manufacturedPart_5.jpg",
   },
-};
+];

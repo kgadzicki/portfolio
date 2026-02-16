@@ -1,7 +1,16 @@
-import "./BeforeAfter.css";
-import { nestingData } from "../Data/NestingData";
+import "./nestingResults.css";
+import { nestingData } from "../Data/nestingData";
 
-function NestingCase() {
+function NestingCase({
+  description,
+  nestingLayout_1,
+  nestingLayout_2,
+  manufacturedPart_1,
+  manufacturedPart_2,
+  manufacturedPart_3,
+  manufacturedPart_4,
+  manufacturedPart_5,
+}) {
   return (
     <>
       <div className="caseStudy">
@@ -62,50 +71,43 @@ function NestingCase() {
         <h3>{nestingData.meta.title_7}</h3>
         <p>{nestingData.meta.text_7}</p>
       </div>
-      <>
-        <div className="nestingContainer">
-          <img
-            className="nestingImage"
-            src={`/${nestingData.optimizedNesting.nestingLayout_1}`}
-            alt=""
-          />
-          <img
-            className="nestingImage"
-            src={`/${nestingData.optimizedNesting.nestingLayout_2}`}
-            alt=""
-          />
-        </div>
-        <div className="secondRow">
-          <img
-            className="productionImage"
-            src={`/${nestingData.optimizedNesting.manufacturedPart_1}`}
-            alt=""
-          />
-          <img
-            className="productionImage"
-            src={`/${nestingData.optimizedNesting.manufacturedPart_2}`}
-            alt=""
-          />
 
-          <img
-            className="productionImage"
-            src={`/${nestingData.optimizedNesting.manufacturedPart_3}`}
-            alt=""
-          />
-        </div>
-        <div className="thirdRow">
-          <img
-            src={`/${nestingData.optimizedNesting.manufacturedPart_4}`}
-            alt=""
-          />
-          <img
-            src={`/${nestingData.optimizedNesting.manufacturedPart_5}`}
-            alt=""
-          />
-        </div>
-      </>
+      <h3>{description}</h3>
+      <div className="nestingContainer">
+        <img className="firstRow" src={nestingLayout_1} alt="" />
+        <img className="firstRow" src={nestingLayout_2} alt="" />
+      </div>
+      <div className="secondRowContainer">
+        <img className="secondRow" src={manufacturedPart_1} alt="" />
+        <img className="secondRow" src={manufacturedPart_2} alt="" />
+        <img className="secondRow" src={manufacturedPart_3} alt="" />
+      </div>
+      <div className="thirdRowContainer">
+        <img className="thirdRow" src={manufacturedPart_4} alt="" />
+        <img className="thirdRow" src={manufacturedPart_5} alt="" />
+      </div>
     </>
   );
 }
 
-export default NestingCase;
+function NestingList({ items }) {
+  return (
+    <div>
+      {items.map((item, index) => (
+        <NestingCase
+          key={index}
+          description={item.description}
+          nestingLayout_1={item.nestingLayout_1}
+          nestingLayout_2={item.nestingLayout_2}
+          manufacturedPart_1={item.manufacturedPart_1}
+          manufacturedPart_2={item.manufacturedPart_2}
+          manufacturedPart_3={item.manufacturedPart_3}
+          manufacturedPart_4={item.manufacturedPart_4}
+          manufacturedPart_5={item.manufacturedPart_5}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default NestingList;

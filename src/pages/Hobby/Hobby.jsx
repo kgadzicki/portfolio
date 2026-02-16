@@ -1,4 +1,4 @@
-import "../Hobby/Hobby.css";
+import "../Hobby/hobby.css";
 
 function Hobby() {
   return (

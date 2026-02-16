@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "../CopyRow/CopyRow.css";
+import "../CopyRow/copyRow.css";
 
 function CopyRow({ label, value, id, copied, onCopy }) {
   const timeoutRef = useRef(null);

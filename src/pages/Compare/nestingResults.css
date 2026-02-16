@@ -1,0 +1,68 @@
+.caseStudy {
+  text-align: left;
+  padding: 1rem;
+}
+.caseStudy h1 {
+  text-align: center;
+  padding: 1rem;
+}
+.caseStudy h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.caseStudy h3 {
+  text-align: left;
+}
+
+/* ////////////// */
+.chartsContainer {
+  text-align: center;
+  width: auto;
+}
+
+.chartsContainer img {
+  max-width: 500px;
+  height: auto;
+  margin: auto;
+}
+.chartsContainer h3 {
+  text-align: center;
+  padding: 1rem;
+}
+/* ////////////// */
+
+.nestingContainer,
+.secondRowContainer,
+.thirdRowContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nestingContainer img,
+.thirdRowContainer img {
+  max-width: 500px;
+  padding: 1rem;
+}
+/* .secondRowContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+.secondRowContainer img {
+  max-height: 500px;
+  padding: 1rem;
+}
+/* .thirdRowContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+/* .thirdRowContainer img {
+  max-width: 500px;
+  padding: 1rem;
+} */

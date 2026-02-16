@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CopyRow from "../../components/CopyRow/CopyRow";
-import "../Contact/Contact.css";
+import "../Contact/contact.css";
 
 const email = "kam.gadzicki@gmail.com";
 const phone = "517-439-350";
