@@ -1,14 +1,11 @@
 function BeforeAfterItem({ before, after }) {
   return (
-    <>
+    <div className="general">
       <div className="beforeSide">
-        <h3>Before</h3>
-        <img
-          src={`/${before.detailPhoto}`}
-          alt="Image"
-          className="detailImage"
-        />
         <div className="parameters">
+          <h3>🟥 Before</h3>
+          <img src={`/${before.detailPhoto}`} alt="Image" />
+
           {before.situationOverview && (
             <p>
               <strong>Situation Overview:</strong> {before.situationOverview}
@@ -23,13 +20,10 @@ function BeforeAfterItem({ before, after }) {
         </div>
       </div>
       <div className="afterSide">
-        <h3>After</h3>
-        <img
-          src={`/${after.detailPhoto}`}
-          alt="Image"
-          className="detailImage"
-        />
         <div className="parameters">
+          <h3>🟩 After</h3>
+          <img src={`/${after.detailPhoto}`} alt="Image" />
+
           {after.correctiveActions && (
             <p>
               <strong>Corrective Actions:</strong> {after.correctiveActions}
@@ -42,7 +36,7 @@ function BeforeAfterItem({ before, after }) {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

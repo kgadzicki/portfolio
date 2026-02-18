@@ -13,3 +13,7 @@
 .portfolioCardTitle {
   color: #f5e6d3;
 }
+.categoryButton button {
+  display: flex;
+  gap: 1rem;
+}

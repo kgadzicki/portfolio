@@ -9,6 +9,8 @@
   width: 100%;
   height: 30vh;
   background-image: url("../../assets/honeycomb.jpg");
+  border-radius: 5px;
+  border: 1px solid;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.4;
@@ -78,4 +80,52 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+}
+
+/* ////// */
+.general {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+.beforeSide {
+  border: 1px solid;
+  background: linear-gradient(to right, #000000, #814b05);
+  border-radius: 5px;
+  flex: 1 320px;
+}
+.afterSide {
+  border: 1px solid;
+  background: linear-gradient(to left, #000000, #814b05);
+  border-radius: 5px;
+  flex: 1 320px;
+}
+.detailImage {
+  /* max-height: 300px; */
+
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  aspect-ratio: 4/3;
+}
+
+.parameters {
+  padding-top: 1rem;
+  text-align: center;
+}
+.parameters img {
+  padding: 1rem;
+  text-align: center;
+  object-fit: contain;
+  width: 100%;
+  height: 500px;
+}
+.parameters p {
+  padding: 1rem;
+  text-align: left;
+}
+
+.categoryButton {
+  padding: 1rem;
 }

@@ -7,9 +7,14 @@ import NestingCase from "../Compare/NestingResults.jsx";
 import { honeycombData } from "../Data/HoneycombData.jsx";
 import BeforeAfterList from "../Compare/BeforeAfter.jsx";
 import { compositesData } from "../Data/CompositesData.jsx";
-import { nestingData, optimizedNesting } from "../Data/nestingData.jsx";
+import { optimizedNesting } from "../Data/nestingData.jsx";
+import { useState } from "react";
 
 function Portfolio() {
+  const [showComposite, setShowComposite] = useState(false);
+  const [showNesting, setShowNesting] = useState(false);
+  const [showHoneycomb, setShowHoneycomb] = useState(false);
+
   return (
     <div className="portfolioCss">
       <div className="portfolioImage"></div>
@@ -23,9 +28,16 @@ function Portfolio() {
             description={
               "Practical projects focused on composite materials. Solving real technological problems from production and testing processes."
             }
-            buttonLabel="view projects"
+            // buttonLabel="view projects"
           />
+          <button
+            className="btn btn-primary"
+            onClick={() => setShowComposite(!showComposite)}
+          >
+            {showComposite ? "Hide Composite" : "Show Composite"}
+          </button>
         </section>
+
         <section className="nesting">
           <PortfolioCard
             image={nestingImage}
@@ -33,8 +45,14 @@ function Portfolio() {
             description={
               "Optimization of part placement on material sheets. Reducing waste and improving production efficiency."
             }
-            buttonLabel="view projects"
+            // buttonLabel="view projects"
           />
+          <button
+            className="btn btn-primary"
+            onClick={() => setShowNesting(!showNesting)}
+          >
+            {showNesting ? "Hide Nesting" : "Show Nesting"}
+          </button>
         </section>
         <section className="honeycomb">
           <PortfolioCard
@@ -43,19 +61,19 @@ function Portfolio() {
             description={
               "Work with honeycomb-based structures. Analyzing and solving quality issues in manufacturing."
             }
-            buttonLabel="view projects"
+            // buttonLabel="view projects"
           />
+          <button
+            className="btn btn-primary"
+            onClick={() => setShowHoneycomb(!showHoneycomb)}
+          >
+            {showHoneycomb ? "Hide Honeycomb" : "Show Honeycomb"}
+          </button>
         </section>
       </div>
-      <div className="categoryButton">
-        <button className="btn btn-primary">All</button>
-        <button className="btn btn-primary">Composites</button>
-        <button className="btn btn-primary">Nesting</button>
-        <button className="btn btn-primary">Heneycomb</button>
-      </div>
-      <NestingCase items={optimizedNesting} />
-      {/* <BeforeAfterList items={honeycombData} />
-      <BeforeAfterList items={compositesData} /> */}
+      {showComposite && <BeforeAfterList items={compositesData} />}
+      {showNesting && <NestingCase items={optimizedNesting} />}
+      {showHoneycomb && <BeforeAfterList items={honeycombData} />}
     </div>
   );
 }

@@ -39,6 +39,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  border: 1px solid;
+  background: linear-gradient(to right, #000000, #814b05);
+  border-radius: 5px;
+  margin: 1rem;
 }
 
 .nestingContainer img,
@@ -46,23 +50,7 @@
   max-width: 500px;
   padding: 1rem;
 }
-/* .secondRowContainer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
 .secondRowContainer img {
   max-height: 500px;
   padding: 1rem;
 }
-/* .thirdRowContainer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
-/* .thirdRowContainer img {
-  max-width: 500px;
-  padding: 1rem;
-} */
