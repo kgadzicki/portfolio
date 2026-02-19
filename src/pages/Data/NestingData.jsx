@@ -79,13 +79,17 @@ export const nestingData = {
 export const optimizedNesting = [
   {
     description: "Optimized Nesting Layout",
-    nestingLayout_1: "portfolio/nesting/before/NestingConcept_1.jpg",
-    nestingLayout_2: "portfolio/nesting/before/NestingConcept_2.jpg",
 
-    manufacturedPart_1: "portfolio/nesting/after/manufacturedPart_1.jpg",
-    manufacturedPart_2: "portfolio/nesting/after/manufacturedPart_2.jpg",
-    manufacturedPart_3: "portfolio/nesting/after/manufacturedPart_3.jpg",
-    manufacturedPart_4: "portfolio/nesting/after/manufacturedPart_4.jpg",
-    manufacturedPart_5: "portfolio/nesting/after/manufacturedPart_5.jpg",
+    layouts: [
+      "portfolio/nesting/before/NestingConcept_1.jpg",
+      "portfolio/nesting/before/NestingConcept_2.jpg",
+    ],
+    manufactured: [
+      "portfolio/nesting/after/manufacturedPart_1.jpg",
+      "portfolio/nesting/after/manufacturedPart_2.jpg",
+      "portfolio/nesting/after/manufacturedPart_3.jpg",
+      "portfolio/nesting/after/manufacturedPart_4.jpg",
+      "portfolio/nesting/after/manufacturedPart_5.jpg",
+    ],
   },
 ];

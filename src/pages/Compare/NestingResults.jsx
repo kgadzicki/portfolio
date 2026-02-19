@@ -1,16 +1,7 @@
 import "./nestingResults.css";
 import { nestingData } from "../Data/nestingData";
 
-function NestingCase({
-  description,
-  nestingLayout_1,
-  nestingLayout_2,
-  manufacturedPart_1,
-  manufacturedPart_2,
-  manufacturedPart_3,
-  manufacturedPart_4,
-  manufacturedPart_5,
-}) {
+function NestingCase({ item }) {
   return (
     <>
       <div className="caseStudy">
@@ -72,19 +63,21 @@ function NestingCase({
         <p>{nestingData.meta.text_7}</p>
       </div>
 
-      <h3>{description}</h3>
+      <h3>{item.description}</h3>
       <div className="nestingContainer">
-        <img className="firstRow" src={nestingLayout_1} alt="" />
-        <img className="firstRow" src={nestingLayout_2} alt="" />
+        {item.layouts.map((src) => (
+          <img className="firstRow" src={src} key={src} alt="efectImage" />
+        ))}
       </div>
       <div className="secondRowContainer">
-        <img className="secondRow" src={manufacturedPart_1} alt="" />
-        <img className="secondRow" src={manufacturedPart_2} alt="" />
-        <img className="secondRow" src={manufacturedPart_3} alt="" />
+        {item.manufactured.slice(0, 3).map((src) => (
+          <img className="secondRow" alt="efectImage" key={src} src={src} />
+        ))}
       </div>
       <div className="thirdRowContainer">
-        <img className="thirdRow" src={manufacturedPart_4} alt="" />
-        <img className="thirdRow" src={manufacturedPart_5} alt="" />
+        {item.manufactured.slice(3, 5).map((src) => (
+          <img className="thirdRow" alt="efectImage" key={src} src={src} />
+        ))}
       </div>
     </>
   );
@@ -94,17 +87,7 @@ function NestingList({ items }) {
   return (
     <div>
       {items.map((item, index) => (
-        <NestingCase
-          key={index}
-          description={item.description}
-          nestingLayout_1={item.nestingLayout_1}
-          nestingLayout_2={item.nestingLayout_2}
-          manufacturedPart_1={item.manufacturedPart_1}
-          manufacturedPart_2={item.manufacturedPart_2}
-          manufacturedPart_3={item.manufacturedPart_3}
-          manufacturedPart_4={item.manufacturedPart_4}
-          manufacturedPart_5={item.manufacturedPart_5}
-        />
+        <NestingCase key={index} item={item} />
       ))}
     </div>
   );

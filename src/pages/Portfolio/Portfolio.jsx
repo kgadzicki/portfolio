@@ -28,7 +28,6 @@ function Portfolio() {
             description={
               "Practical projects focused on composite materials. Solving real technological problems from production and testing processes."
             }
-            // buttonLabel="view projects"
           />
           <button
             className="btn btn-primary"
@@ -45,7 +44,6 @@ function Portfolio() {
             description={
               "Optimization of part placement on material sheets. Reducing waste and improving production efficiency."
             }
-            // buttonLabel="view projects"
           />
           <button
             className="btn btn-primary"
@@ -61,7 +59,6 @@ function Portfolio() {
             description={
               "Work with honeycomb-based structures. Analyzing and solving quality issues in manufacturing."
             }
-            // buttonLabel="view projects"
           />
           <button
             className="btn btn-primary"
