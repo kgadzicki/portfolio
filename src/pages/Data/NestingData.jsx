@@ -1,23 +1,23 @@
 export const nestingData = {
   charts: {
-    titleDefectRate: "📉 Weekly defect rate – drastic reduction over 12 weeks",
+    defectTitle: "📉 Weekly defect rate – drastic reduction over 12 weeks",
     defectRate: "portfolio/nesting/after/defectRate.jpg",
-    titleQuantity:
+    quantityTitle:
       "📈 Weekly production – number of conforming parts and defects – volume increase with stable quality",
-    quantity: "portfolio/nesting/after/quantity.png",
+    quantityImage: "portfolio/nesting/after/quantity.png",
   },
 
   meta: {
-    title_1: "Case Study",
-    text_1: [
+    introTitle: "Case Study",
+    introHighlights: [
       `Optimization of Honeycomb Filler Part Production under Crisis Conditions`,
       "Position: Process Engineer – Programmer",
       "Project Duration: 12 weeks",
       "Industry: Industrial Manufacturing (CNC, Aerospace / Composites)",
     ],
 
-    title_2: "Technologies:",
-    points_1: [
+    backgroundTitle: "Technologies:",
+    backgroundText: [
       "CATIA",
       "CNC programming",
       "steel templates",
@@ -26,11 +26,11 @@ export const nestingData = {
       "quality analysis",
     ],
 
-    title_3: "🔍 Challenge Background",
-    text_3:
+    problemTitle: "🔍 Challenge Background",
+    problemDescription:
       "Due to a sudden surge in demand from a key client, the company faced significant production challenges:",
 
-    points_2: [
+    problemDetails: [
       "High defect rate (14.9%)",
       "Limited number of CNC machines and operators",
       "Most programs prepared for single-piece production",
@@ -38,22 +38,22 @@ export const nestingData = {
       "Increasing time and cost pressure",
     ],
 
-    text_4:
+    actionsSummary:
       "The goal was to quickly develop and implement a strategy that would significantly increase production capacity while simultaneously reducing material waste.",
 
-    title_4: "🧠 Practical Knowledge as the Key to Success",
-    text_5:
+    actionsTitle: "🧠 Practical Knowledge as the Key to Success",
+    actionsDescription:
       "My experience as a CNC operator played a crucial role in the success of this project:",
 
-    points_3: [
+    actionsSteps: [
       "Familiarity with honeycomb fillers (Nomex and aluminum; various thicknesses/densities) allowed fast feasibility checks for serial production.",
       "Strong understanding of CNC capabilities/limitations (tools, strategies, repeatability, ergonomics) enabled realistic program adaptation.",
     ],
 
-    title_5: "🔧 Stages of Actions and Optimization",
-    text_6: "Analysis of over 1200 CNC programs regarding:",
+    resultsTitle: "🔧 Stages of Actions and Optimization",
+    resultsDescription: "Analysis of over 1200 CNC programs regarding:",
 
-    points_4: [
+    resultsMetrics: [
       "Number of phases (single-phase/two-phase)",
       "Potential for serial production",
       "Types of materials used",
@@ -64,15 +64,46 @@ export const nestingData = {
       "Exclusion of parts requiring exclusively single-piece approaches (postponed or reduced)",
     ],
 
-    title_6: "Development of over 100 new CNC programs:",
-    points_5: [
+    conclusionTitle: "Development of over 100 new CNC programs:",
+    conclusions: [
       "Optimized for a single honeycomb filler block",
       "Matched to the machine park and operator skills",
       "Easy to implement and resistant to human errors",
     ],
-    title_7: `📘 Side Effects – Knowledge and Development`,
-    text_7:
+    summaryTitle: `📘 Side Effects – Knowledge and Development`,
+    summaryText:
       "Consolidation of practical knowledge about honeycomb filler machining, their technological properties, and optimization possibilities Advanced development of CNC programming skills for serial and repeatable production Strengthening analytical skills and implementing solutions in production conditions Ability to react quickly under time and resource pressure.",
+  },
+
+  resultsTable: {
+    title: "📊 Results – Data Confirmed",
+    columns: ["Parametr", "WEEK 1", "WEEK 12", "CHANGE"],
+    rows: [
+      {
+        metric: "Defect rate",
+        week1: "14.9%",
+        week12: "0.2%",
+        change: "🔻 -14.7 p.p.",
+      },
+      {
+        metric: "Total production",
+        week1: "26 pcs",
+        week12: "535 pcs",
+        change: "🔼 +1958%",
+      },
+      {
+        metric: "Number of defectse",
+        week1: "13 pcs",
+        week12: "1 pcs",
+        change: "🔻 -92%",
+      },
+      {
+        metric: "CNC programs developed",
+        week1: "13 pcs",
+        week12: "100+",
+        change: "	✅",
+      },
+    ],
   },
 };
 
