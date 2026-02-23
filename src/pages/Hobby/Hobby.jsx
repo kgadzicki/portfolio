@@ -3,9 +3,10 @@ import "../Hobby/hobby.css";
 function Hobby() {
   return (
     <>
-      <div className="hobbyImage"></div>
+      <p>Hobby</p>
     </>
   );
 }
 
 export default Hobby;
+<></>;

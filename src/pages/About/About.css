@@ -1,10 +1,68 @@
-.aboutImage {
+.aboutContainer {
+  padding: 1rem;
+  height: 100vh;
+  /* min-height: 100vh; */
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.topSection {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.bottomSection {
+  background: linear-gradient(to right, #000000, #814c08);
+  border: 1px solid rgb(90, 84, 84);
+  border-radius: 5px;
+}
+.cardsGrid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.manufacturingContainer,
+.frontendContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.all {
+  padding: 1rem;
+  display: flex;
+  background: linear-gradient(to left, #000000, #814b05);
+  border: 1px solid rgb(90, 84, 84);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.all:hover {
+  background: linear-gradient(to left, #000000, #aca9a5);
+  border: 1px solid rgb(255, 254, 254);
+}
+.imgContainer {
+  display: flex;
+  height: 100px;
+}
+.titleContainer h3 {
+  text-align: center;
+}
+.imgContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.titleContainer {
   width: 100%;
-  height: 30vh;
-  background-image: url("../../assets/about_me.jpg");
-  background-size: contain;
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  background-position: center 45%;
-  opacity: 0.7;
+}
+.video {
+  margin: 3rem;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
 }
