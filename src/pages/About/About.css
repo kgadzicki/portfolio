@@ -1,7 +1,7 @@
 .aboutContainer {
   padding: 1rem;
-  height: 100vh;
-  /* min-height: 100vh; */
+  /* height: 100vh; */
+  min-height: 100vh;
   padding: 1rem;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -31,7 +31,7 @@
   flex-direction: column;
 }
 
-.all {
+.toolkitCard {
   padding: 1rem;
   display: flex;
   background: linear-gradient(to left, #000000, #814b05);
@@ -39,8 +39,9 @@
   border-radius: 5px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
-.all:hover {
+.toolkitCard:hover {
   background: linear-gradient(to left, #000000, #aca9a5);
   border: 1px solid rgb(255, 254, 254);
 }
@@ -61,8 +62,58 @@
 .titleContainer {
   width: 100%;
 }
-.video {
-  margin: 3rem;
+
+/* //// PLAYER /////*/
+
+.detailsPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.detailsHeader {
+  display: flex;
+  gap: 1rem;
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: space-between;
+}
+.detailsHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.detailsHeaderRight {
+}
+.detailsCloseBtn {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.detailsPlayer {
   border: 1px solid whitesmoke;
   border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.detailsSummary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.detailsTools {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid red;
+}
+.detailsToolsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
