@@ -1,5 +1,5 @@
 import "../About/about.css";
-import { manufacturingData, frontendData } from "../Data/aboutData";
+import { manufacturingData, frontendData, playerData } from "../Data/aboutData";
 import { useState } from "react";
 
 function AboutItem({ program, programIcon, shortInfo, onClick }) {
@@ -16,8 +16,11 @@ function AboutItem({ program, programIcon, shortInfo, onClick }) {
   );
 }
 
-function AboutList() {
-  const [showVideo, setShowVideo] = useState(false);
+function AboutList({ videoSrc }) {
+  // const [showVideo, setShowVideo] = useState(false);
+
+  const [selectedId, setSelectedId] = useState(null);
+  const selectedPlayer = playerData.find((item) => item.id === selectedId);
 
   return (
     <>
@@ -30,11 +33,12 @@ function AboutList() {
             <div className="cardsGrid">
               {manufacturingData.map((item) => (
                 <AboutItem
-                  onClick={() => setShowVideo((prev) => !prev)}
+                  onClick={() => setSelectedId(item.id)}
                   key={item.program}
-                  program={item.program}
-                  programIcon={item.programIcon}
-                  shortInfo={item.shortInfo}
+                  {...item}
+                  // program={item.program}
+                  // programIcon={item.programIcon}
+                  // shortInfo={item.shortInfo}
                 />
               ))}
             </div>
@@ -44,27 +48,28 @@ function AboutList() {
             <div className="cardsGrid">
               {frontendData.map((item) => (
                 <AboutItem
-                  onClick={() => setShowVideo((prev) => !prev)}
+                  onClick={() => setSelectedId(item.id)}
                   key={item.program}
-                  program={item.program}
-                  programIcon={item.programIcon}
-                  shortInfo={item.shortInfo}
+                  {...item}
+                  // program={item.program}
+                  // programIcon={item.programIcon}
+                  // shortInfo={item.shortInfo}
                 />
               ))}
             </div>
           </div>
         </div>
-        {showVideo && (
+        {selectedId && (
           <div className="bottomSection">
             <div className="detailsPanel">
               <header className="detailsHeader">
                 <div className="detailsHeaderLeft">
-                  <img src="" alt="icon" />
-                  <h3>title</h3>
+                  <img src={`/${selectedPlayer.iconSrc}`} alt="icon" />
+                  <h3>{selectedPlayer.name}</h3>
                 </div>
                 <div className="detailsHeaderRight">
                   <button
-                    onClick={() => setShowVideo(false)}
+                    onClick={() => setSelectedId(null)}
                     className="detailsCloseBtn"
                   >
                     x
@@ -73,23 +78,26 @@ function AboutList() {
               </header>
               <div className="detailsSummary">
                 <ul>
-                  <li>aa</li>
-                  <li>aa</li>
-                  <li>dd</li>
-                  <li>cc</li>
+                  {selectedPlayer.bullets.map((bullet) => (
+                    <li>{bullet}</li>
+                  ))}
                 </ul>
               </div>
-              <video className="detailsPlayer" controls></video>
+              <video
+                src={selectedPlayer.videoSrc}
+                className="detailsPlayer"
+                controls
+              ></video>
               <footer className="detailsTools">
-                <h4>ToolUsed</h4>
+                <h4>Tools</h4>
                 <ul className="detailsToolsList">
+                  {selectedPlayer.tools.map((tool) => (
+                    <li>{tool}</li>
+                  ))}
                   <li className="detailToolsBadge">
-                    <img src="" alt="Img" />
-                    <span>Catia</span>
+                    {/* <img src="" alt="Img" />
+                    <span>Catia</span> */}
                   </li>
-                  <li>5-axis CNC</li>
-                  <li></li>
-                  <li></li>
                 </ul>
               </footer>
             </div>
