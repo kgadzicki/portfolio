@@ -17,8 +17,6 @@ function AboutItem({ program, programIcon, shortInfo, onClick }) {
 }
 
 function AboutList({ videoSrc }) {
-  // const [showVideo, setShowVideo] = useState(false);
-
   const [selectedId, setSelectedId] = useState(null);
   const selectedPlayer = playerData.find((item) => item.id === selectedId);
 
@@ -77,27 +75,28 @@ function AboutList({ videoSrc }) {
                 </div>
               </header>
               <div className="detailsSummary">
-                <ul>
+                <ul className="detailsList">
                   {selectedPlayer.bullets.map((bullet) => (
                     <li>{bullet}</li>
                   ))}
                 </ul>
               </div>
               <video
-                src={selectedPlayer.videoSrc}
+                src={`/${selectedPlayer.videoSrc}`}
+                alt="video"
                 className="detailsPlayer"
                 controls
               ></video>
               <footer className="detailsTools">
-                <h4>Tools</h4>
+                <h4>Tools used:</h4>
                 <ul className="detailsToolsList">
                   {selectedPlayer.tools.map((tool) => (
                     <li>{tool}</li>
                   ))}
-                  <li className="detailToolsBadge">
-                    {/* <img src="" alt="Img" />
-                    <span>Catia</span> */}
-                  </li>
+                  {/* <li className="detailToolsBadge">
+                    <img src="" alt="Img" />
+                    <span>Catia</span> 
+                  </li> */}
                 </ul>
               </footer>
             </div>

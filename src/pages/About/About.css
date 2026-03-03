@@ -4,7 +4,7 @@
   min-height: 100vh;
   padding: 1rem;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto auto;
   gap: 1rem;
 }
 .topSection {
@@ -14,9 +14,14 @@
   gap: 1rem;
 }
 .bottomSection {
+  /* background: linear-gradient(to left, #000000, #aca9a5);  */
   background: linear-gradient(to right, #000000, #814c08);
   border: 1px solid rgb(90, 84, 84);
-  border-radius: 5px;
+  border-radius: 1rem;
+}
+.bottomSection:hover {
+  /* background: linear-gradient(to left, #000000, #aca9a5); */
+  /* border: 1px solid rgb(255, 254, 254); */
 }
 .cardsGrid {
   padding-top: 1rem;
@@ -57,6 +62,7 @@
   max-height: 100%;
   object-fit: contain;
   border-radius: 5px;
+  border-radius: 1rem;
 }
 
 .titleContainer {
@@ -71,16 +77,26 @@
   gap: 1rem;
 }
 .detailsHeader {
+  border-bottom: 1px solid;
   display: flex;
   gap: 1rem;
-  border: 1px solid blue;
   align-items: center;
   justify-content: space-between;
+}
+.detailsHeader:hover {
+  background: linear-gradient(to left, #000000, #aca9a5);
+  border-radius: 1rem;
 }
 .detailsHeaderLeft {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.detailsHeaderLeft img {
+  display: flex;
+  height: 100px;
+  margin: 1rem;
+  border-radius: 1rem;
 }
 
 .detailsHeaderRight {
@@ -91,12 +107,21 @@
   font-size: 1rem;
   border-radius: 50%;
   cursor: pointer;
+  margin-right: 1rem;
 }
 .detailsPlayer {
-  border: 1px solid whitesmoke;
-  border-radius: 5px;
-  width: 100%;
+  margin: 1rem;
+  width: calc(100% - 2rem);
   height: auto;
+  padding: 1rem;
+  background: linear-gradient(to right, #000000, #814c08);
+}
+.detailsPlayer:hover {
+  background: linear-gradient(to left, #000000, #aca9a5);
+}
+video {
+  border: 1px solid grey;
+  border-radius: 1rem;
 }
 .detailsSummary ul {
   list-style: none;
@@ -107,7 +132,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  border: 1px solid red;
 }
 .detailsToolsList {
   display: flex;
@@ -116,4 +140,33 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.detailsList li {
+  margin-left: 2rem;
+  padding-left: 1rem;
+  list-style: disc;
+}
+.detailsToolsList {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.detailsTools h4 {
+  text-align: left;
+}
+.detailsTools li {
+  background: linear-gradient(to right, #000000, #814c08);
+  border: 1px solid rgb(107, 73, 11);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.detailsTools li:hover {
+  background: linear-gradient(to left, #000000, #aca9a5);
 }

@@ -1,22 +1,26 @@
 export const manufacturingData = [
   {
+    id: "catia",
     program: "Catia",
     programIcon: "portfolio/programicon/DS-CATIA-Logo-1.png",
     shortInfo: "3D CAD modeling, engineering docx",
   },
   {
+    id: "nx",
     program: "Nx",
     programIcon: "portfolio/programicon/siemens_nx_plm.png",
     shortInfo: "CAD/CAM, CNC programming",
   },
 
   {
+    id: "heidenhain",
     program: "Heidenhain",
     programIcon:
       "portfolio/programicon/Heidenhain Manual Plus 620 control system.jpeg",
     shortInfo: "CNC programming IPC 644",
   },
   {
+    id: "sinumerik",
     program: "Sinumerik",
     programIcon: "portfolio/programicon/Sinumerik.png",
     shortInfo: "CNC programming toolpaths",
@@ -24,22 +28,26 @@ export const manufacturingData = [
 ];
 export const frontendData = [
   {
+    id: "react",
     program: "React",
     programIcon: "portfolio/programicon/react.png",
     shortInfo: "UI components, state management",
   },
 
   {
+    id: "javaScript",
     program: "JavaScript",
     programIcon: "portfolio/programicon/javascript-logo.png",
     shortInfo: "Modern JavaScript, ES6+",
   },
   {
+    id: "git",
     program: "Git",
     programIcon: "portfolio/programicon/git-logo.png",
     shortInfo: "Version control, daily commits",
   },
   {
+    id: "vite",
     program: "Vite",
     programIcon: "portfolio/programicon/Sinumerik.png",
 
@@ -57,6 +65,7 @@ export const playerData = [
     ],
     tools: ["Sketcher", "Part Design", "Assembly Design", "Advanced Machining"],
     iconSrc: "portfolio/programicon/DS-CATIA-Logo-1.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
   {
     id: "nx",
@@ -69,6 +78,7 @@ export const playerData = [
     ],
     tools: ["Sketch", "Modeling", "Assembly", "NX CAM"],
     iconSrc: "portfolio/programicon/siemens_nx_plm.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
   {
     id: "heidenhain",
@@ -87,6 +97,7 @@ export const playerData = [
     ],
     iconSrc:
       "portfolio/programicon/Heidenhain Manual Plus 620 control system.jpeg",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
   {
     id: "sinumerik",
@@ -105,6 +116,7 @@ export const playerData = [
       "Macro Variables & Parameter Editing",
     ],
     iconSrc: "portfolio/programicon/Sinumerik.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
 
   {
@@ -124,6 +136,26 @@ export const playerData = [
       "Component Composition",
     ],
     iconSrc: "portfolio/programicon/react.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
+  },
+  {
+    id: "javaScript",
+    name: "JavaScript",
+    bullets: [
+      "Modern ES6+ Syntax & Functional Programming Patterns",
+      "Array Methods & Immutable State Manipulation",
+      "Asynchronous Programming (Promises, async/await)",
+      "DOM Interaction & Event Handling",
+    ],
+    tools: [
+      "ES6+",
+      "Array.map / filter / reduce",
+      "Destructuring & Spread",
+      "Async / Await",
+      "Modules (import/export)",
+    ],
+    iconSrc: "portfolio/programicon/javascript-logo.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
   {
     id: "git",
@@ -135,7 +167,8 @@ export const playerData = [
       "Code Review & Remote Repository Management",
     ],
     tools: ["Git", "Commits", "Branches", "Merge / Rebase (basic)", "GitHub"],
-    iconSrc: "portfolio/programicon/git.png",
+    iconSrc: "portfolio/programicon/git-logo.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
   {
     id: "vite",
@@ -147,5 +180,6 @@ export const playerData = [
     ],
     tools: ["Vite", "Dev Server", "HMR", "Build Pipeline"],
     iconSrc: "portfolio/programicon/vite.png",
+    videoSrc: "portfolio/video/TNC 620.mp4",
   },
 ];
